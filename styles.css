@@ -1,3 +1,23 @@
+/* Update styles for mobile devices */
+@media screen and (max-width: 600px) {
+  /* Adjust the font size for smaller screens */
+  .w3-jumbo {
+    font-size: 2em; /* Adjust the value as needed */
+  }
+
+  /* Modify the menu items to stack vertically on small screens */
+  .w3-bar-item {
+    display: block;
+    text-align: center;
+  }
+
+  /* Adjust the header image size for smaller screens */
+  .bgimg {
+    /* Add appropriate styling for the header image */
+  }
+}
+
+
 body, html {height: 100%}
 body,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 
