@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Afghan Delicacy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Fresh Food</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bakery</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Fresh Meat</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Bolani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.99</span></h1>
+      <p class="w3-text-grey">Choice of potatoes or leeks. Pumpkin extra charge</p>
+      <hr>
+   
+      <h1><b>Shami Kabab</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$9.99</span></h1>
+      <p class="w3-text-grey">With salad or rice for an additional charge</p>
+      <hr>
+      
+      <h1><b>Qabeli Palaw</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.99</span></h1>
+      <p class="w3-text-grey">Qabeli Palaw</p>
+      <hr>
+
+      <h1><b>Chicken Kabab</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.99</span></h1>
+      <p class="w3-text-grey">With salad or rice for an additional charge</p>
+      <hr>
+
+      <h1><b>Chapli Kabab</b><span class="w3-right w3-tag w3-dark-grey w3-round">$9.99</span></h1>
+      <p class="w3-text-grey">With salad or rice for an additional charge</p>
+      <hr>
+
+      <h1><b>Chapli Kabab Wrap</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.99</span></h1>
+      <p class="w3-text-grey">Wrap</p>
+
+      <h1><b>Samosa</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$1.00</span></h1>
+      <p class="w3-text-grey">Veggie Samosa only</p>
+
+
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Afghan Naan</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.25</span></h1>
+      <p class="w3-text-grey">Traditional Whole Wheat Afghan Naan</p>
+      <hr>
+   
+      <h1><b>Sweet Bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.99</span></h1>
+      <p class="w3-text-grey">Afghan Root</p>
+      <hr>
+      
+      <h1><b>Assorted Cookies</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.99/lb</span></h1>
+      <p class="w3-text-grey">Varies day to day</p>
+      <hr>
+
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Chicken Breast</b><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50/lb</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+   
+      <h1><b>Ground Beef</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50/lb</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1><b>Lamb Shank</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50/lb</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Welcome to Afghan Delicacy, where the rich tapestry of Afghan culture comes to life through our exquisite culinary offerings. Nestled in the heart of Ajax, our restaurant is a haven for those seeking an authentic and immersive Afghan dining experience. </p>
+    <div id="map-container">
+        <iframe
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border:0"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1281.4927831370387!2d-79.0260000107849!3d43.85885083046247!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4df3e8e5618e5%3A0xbd2f5f6766d3aa36!2sAfghan%20delicacy!5e0!3m2!1sen!2sca!4v1692812181944!5m2!1sen!2sca" width="600" height="50" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <h1><b>Hours of Service</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Monday  -  Saturday   8:30 a.m  - 8:30 p.m</p>
+        <p>Sunday   9 a.m -  7 p.m </p>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="https://i.postimg.cc/CLXCQxJC/scene1.jpg"  >
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us inside Hasty Market or call us at 905-427-4887</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Designed By J</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
